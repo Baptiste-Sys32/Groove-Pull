@@ -1,17 +1,17 @@
-# groove-pull 🎵
+# Groove-Pull
 
-A CLI tool to turn Spotify CSV exports into a perfectly tagged offline MP3 library, complete with official high-res cover art and synchronized scrolling lyrics (`.lrc`).
+A CLI tool that turns Spotify CSV exports into a tagged offline MP3 library, with Spotify cover art and synchronized scrolling lyrics (`.lrc`).
 
 ---
 
 ## Features
 
-- **Fast Incremental Sync**: Instantly skips already-downloaded tracks in a split second, downloading only new additions to your CSV.
-- **Official Spotify Album Art**: Automatically queries Spotify CDN to grab official, 640x640 square cover art and embeds it into your MP3 tags natively.
-- **Synchronized Scrolling Lyrics (`.lrc`)**: Grabs companion timestamped lyrics from the community LRC database for real-time scrolling display on mobile/tablet audio players.
-- **Metadata Tagging**: Autopopulates standard ID3v2 frames: Title, Artist, Album, Release Year, and Genre.
-- **exFAT/MTP Safe Naming**: Sanitizes track names and automatically structures filenames as `Artist - Track Name.mp3` for perfect compatibility with Android/Windows filesystems.
-- **Anti-Bot Cookie Support**: Native `cookies.txt` support to bypass YouTube extraction blocks.
+- **Incremental sync**: Skips already-downloaded tracks, downloading only new additions to your CSV.
+- **Spotify album art**: Queries the Spotify CDN for official 640x640 cover art and embeds it in the MP3 tags.
+- **Synchronized lyrics (`.lrc`)**: Fetches timestamped lyrics from the community LRC database for scrolling display on mobile/tablet audio players.
+- **Metadata tagging**: Writes standard ID3v2 frames: Title, Artist, Album, Release Year, and Genre.
+- **exFAT/MTP safe naming**: Sanitizes track names and structures filenames as `Artist - Track Name.mp3` for Android/Windows filesystems.
+- **Cookie support**: Reads `cookies.txt` when YouTube blocks plain requests.
 
 ---
 
